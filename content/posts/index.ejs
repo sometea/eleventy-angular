@@ -1,0 +1,5 @@
+---
+permalink: "/api/posts/index.json"
+---
+<% const posts = collections.posts.map(post => ({ title: post.data.title, url: post.url})); %>
+<%- JSON.stringify({posts}); -%>

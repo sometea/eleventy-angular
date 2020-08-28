@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: The first post
+title: The second post
 ---
 
 # The second post
