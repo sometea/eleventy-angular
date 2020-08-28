@@ -1,0 +1,21 @@
+{
+  "name": "eleventy-sample",
+  "version": "1.0.0",
+  "description": "generating json files from markdown for use in angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "keywords": [
+    "json",
+    "markdown",
+    "11ty",
+    "angular"
+  ],
+  "author": "David Dasenbrook",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
