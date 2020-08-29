@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { PostService, Post } from './post.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +7,6 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'angular-eleventy-blog';
-  posts: Observable<Post[]>;
 
-  constructor(private postService: PostService) { }
-
-  ngOnInit() {
-    this.getPosts();
-  }
-
-  getPosts() {
-    this.posts = this.postService.list();
-  }
+  constructor() { }
 }
