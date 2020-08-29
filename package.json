@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-sample",
+  "name": "eleventy-angular",
   "version": "1.0.0",
   "description": "generating json files from markdown for use in angular",
   "main": "index.js",
