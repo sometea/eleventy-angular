@@ -11,11 +11,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostDetailRoutedComponent } from './post-detail-routed/post-detail-routed.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostListComponent
+    PostListComponent,
+    PostDetailComponent,
+    PostDetailRoutedComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

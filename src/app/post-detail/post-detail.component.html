@@ -1,0 +1,4 @@
+<div *ngIf="post | async">
+    <h2>{{ (post | async).title }}</h2>
+    <p [innerHtml]="(post | async).content"></p>
+</div>
