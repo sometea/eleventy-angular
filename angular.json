@@ -166,9 +166,7 @@
             "browserTarget": "angular-eleventy-blog:build:production",
             "serverTarget": "angular-eleventy-blog:server:production",
             "routes": [
-              "/",
-              "/posts/first",
-              "/posts/second"
+              "/"
             ]
           },
           "configurations": {
