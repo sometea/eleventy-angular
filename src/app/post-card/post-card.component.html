@@ -1,0 +1,15 @@
+<mat-card routerLink="/posts/{{ post.fileSlug }}" [ngClass]="orientation">
+    <img *ngIf="orientation === 'landscape'" mat-card-image src="https://source.unsplash.com/random/400x300"
+        alt="random image">
+        <div ngClass="landscapeWrapper">
+            <mat-card-header>
+                <mat-card-title>{{ post.title }}</mat-card-title>
+                <mat-card-subtitle>{{ post.url }}</mat-card-subtitle>
+            </mat-card-header>
+            <img *ngIf="orientation === 'portrait'" mat-card-image src="https://source.unsplash.com/random/400x300"
+                alt="random image">
+            <mat-card-content>
+                <p>A teaser text for this blog post</p>
+            </mat-card-content>
+        </div>
+</mat-card>

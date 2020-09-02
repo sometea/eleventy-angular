@@ -1,0 +1,20 @@
+mat-card {
+    margin: 5rem;
+}
+
+mat-card.portrait {
+    max-width: 30vw;
+}
+
+mat-card.landscape {
+    max-width: 70vw;
+    display: flex;
+}
+
+.landscapeWrapper {
+    display: block;
+}
+
+mat-card.landscape .landscapeWrapper {
+    margin-left: 2rem;
+}

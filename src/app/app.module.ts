@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
 
 
@@ -14,6 +13,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostDetailRoutedComponent } from './post-detail-routed/post-detail-routed.component';
 import { HomeComponent } from './home/home.component';
+import { PostCardComponent } from './post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     PostListComponent,
     PostDetailComponent,
     PostDetailRoutedComponent,
-    HomeComponent
+    HomeComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -29,7 +30,6 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule,
     LayoutModule,
   ],
   providers: [],

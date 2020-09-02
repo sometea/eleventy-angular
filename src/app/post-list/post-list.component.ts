@@ -12,28 +12,15 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 })
 export class PostListComponent implements OnInit {
   posts: Observable<Post[]>;
-  cols = 2;
 
-
-  constructor(private postService: PostService, private breakpointObserver: BreakpointObserver) { }
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
     this.getPosts();
-    this.breakpointObserver.observe([Breakpoints.XSmall]).subscribe(result => {
-      if (result.matches) {
-        this.cols = 1;
-      } else {
-        this.cols = 3;
-      }
-    })
   }
 
-  getColspan(index: number) {
-    return index === 0 ? 3 : 1;
-  }
-
-  getCssClass(index: number) {
-    return index === 0 ? 'first' : '';
+  getOrientation(index: number) {
+    return index === 0 ? 'landscape' : 'portrait';
   }
 
   private getPosts() {
