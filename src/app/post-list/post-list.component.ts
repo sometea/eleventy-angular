@@ -23,13 +23,20 @@ export class PostListComponent implements OnInit {
       if (result.matches) {
         this.cols = 1;
       } else {
-        this.cols = 2;
+        this.cols = 3;
       }
     })
   }
 
-  getPosts() {
-    this.posts = this.postService.list();
+  getColspan(index: number) {
+    return index === 0 ? 3 : 1;
   }
 
+  getCssClass(index: number) {
+    return index === 0 ? 'first' : '';
+  }
+
+  private getPosts() {
+    this.posts = this.postService.list();
+  }
 }

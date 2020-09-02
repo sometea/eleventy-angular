@@ -1,3 +1,15 @@
-mat-card {
-    max-width: 40vw;
+mat-card.first {
+    display: flex;
+}
+
+mat-card.first img {
+    order: 1;
+}
+
+mat-card.first mat-card-header {
+    order: 2;
+}
+
+mat-card.first mat-card-content {
+    order: 3;
 }
