@@ -31,7 +31,9 @@ export class PostService {
       return '';
     }
     // for build-time prerendering, need absolute urls
-    return 'http://localhost:4200/';
+    // this also means that the eleventy server needs to
+    // be running while prerendering
+    return 'http://localhost:8080/';
   }
 
   list() {
