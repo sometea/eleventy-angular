@@ -1,5 +1,7 @@
 mat-card {
     margin: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 mat-card.portrait {
@@ -8,13 +10,17 @@ mat-card.portrait {
 
 mat-card.landscape {
     max-width: 70vw;
+    max-height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+}
+
+mat-card.landscape img {
+    width: 60%;
+    margin-right: 2rem;
 }
 
 .landscapeWrapper {
     display: block;
-}
-
-mat-card.landscape .landscapeWrapper {
-    margin-left: 2rem;
 }
