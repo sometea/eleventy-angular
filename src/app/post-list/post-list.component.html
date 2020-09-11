@@ -1,3 +1,5 @@
+<div ngClass="smallCardsWrapper">
     <ng-container *ngFor="let post of (posts | async); let ind = index">
-                <app-post-card [post]="post" [orientation]="getOrientation(ind)"></app-post-card>
+        <app-post-card [post]="post" [orientation]="getOrientation(ind)"></app-post-card>
     </ng-container>
+</div>

@@ -13,3 +13,9 @@ mat-card.first mat-card-header {
 mat-card.first mat-card-content {
     order: 3;
 }
+
+.smallCardsWrapper {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
