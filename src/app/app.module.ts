@@ -4,8 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { LayoutModule } from '@angular/cdk/layout';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +30,7 @@ import { PostCardComponent } from './post-card/post-card.component';
     AppRoutingModule,
     MatToolbarModule,
     MatCardModule,
+    MatDividerModule,
     LayoutModule,
   ],
   providers: [],
