@@ -5,4 +5,4 @@ pagination:
     alias: post
 permalink: "/api/posts/<%- post.fileSlug -%>.json"
 ---
-<%- JSON.stringify({title: post.data.title, url: post.url, date: post.date, author: post.data.author, content: post.templateContent}) -%>
+<%- JSON.stringify({title: post.data.title, url: post.url, date: post.date, author: post.data.author, image: post.data.image, content: post.templateContent}) -%>

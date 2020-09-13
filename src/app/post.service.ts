@@ -8,6 +8,7 @@ export interface Post {
   url: string;
   fileSlug: string;
   date: Date;
+  image: string;
 }
 
 export interface ListResponse {
@@ -20,6 +21,7 @@ export interface PostDetail {
   content: string;
   date: Date;
   author: string;
+  image: string;
 }
 
 @Injectable({

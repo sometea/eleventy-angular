@@ -4,8 +4,12 @@ backend:
   branch: master
   base_url: https://us-central1-ontheground-staging.cloudfunctions.net
   auth_endpoint: /oauth/auth
-media_folder: "static"
-public_folder: "/"  
+public_folder: "/"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dgnntwrsy
+    api_key: 536184394297336
 collections:
   - name: "post"
     label: "Blog Post"
@@ -14,7 +18,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widhet: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Cover image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}

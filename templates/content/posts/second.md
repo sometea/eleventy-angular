@@ -2,6 +2,7 @@
 layout: layout.njk
 title: The second post
 author: David
+image: https://source.unsplash.com/random/400x300
 ---
 
 # The second post

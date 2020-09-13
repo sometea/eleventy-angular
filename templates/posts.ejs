@@ -1,5 +1,5 @@
 ---
 permalink: "/api/posts/index.json"
 ---
-<% const posts = collections.posts.map(post => ({ title: post.data.title, url: `/api/posts/${post.fileSlug}.json`, fileSlug: post.fileSlug, date: post.date })); %>
+<% const posts = collections.posts.map(post => ({ title: post.data.title, url: `/api/posts/${post.fileSlug}.json`, fileSlug: post.fileSlug, date: post.date, image: post.data.image })); %>
 <%- JSON.stringify({posts}); -%>
