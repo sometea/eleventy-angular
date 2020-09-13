@@ -1,0 +1,5 @@
+---
+permalink: "/api/posts/slugs.json"
+---
+<% const postSlugs = collections.posts.map(post => post.fileSlug); %>
+<%- JSON.stringify({":postSlug":postSlugs}); -%>

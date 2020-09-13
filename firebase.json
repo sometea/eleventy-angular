@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/eleventy-angular/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -19,7 +19,6 @@ export class PostCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.XSmall]).subscribe(result => {
-      console.log(result);
       this.effectiveOrientation = result.matches ? 'portrait' : this.orientation;
     });
   }
