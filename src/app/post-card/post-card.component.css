@@ -3,6 +3,7 @@ mat-card {
     margin-top: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    cursor: pointer;
 }
 
 mat-card.portrait {

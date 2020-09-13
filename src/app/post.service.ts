@@ -7,6 +7,7 @@ export interface Post {
   title: string;
   url: string;
   fileSlug: string;
+  date: Date;
 }
 
 export interface ListResponse {
@@ -17,6 +18,8 @@ export interface PostDetail {
   title: string;
   url: string;
   content: string;
+  date: Date;
+  author: string;
 }
 
 @Injectable({
@@ -36,11 +39,22 @@ export class PostService {
     return 'http://localhost:8080/';
   }
 
+  private parsePost(post: any): Post | PostDetail {
+    return { ...post, date: new Date(post.date) };
+  }
+
   list() {
-    return this.http.get<ListResponse>(`${this.getBaseUrl()}api/posts/index.json`).pipe(map(response => response.posts));
+    return this.http.get<ListResponse>(`${this.getBaseUrl()}api/posts/index.json`)
+      .pipe(
+        map(response => response.posts),
+        map(posts => posts.map(this.parsePost))
+      );
   }
 
   get(postSlug: string) {
-    return this.http.get<PostDetail>(`${this.getBaseUrl()}api/posts/${postSlug}.json`);
+    return this.http.get<PostDetail>(`${this.getBaseUrl()}api/posts/${postSlug}.json`)
+      .pipe(
+        map(this.parsePost)
+      );
   }
 }

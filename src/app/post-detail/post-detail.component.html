@@ -1,2 +1,5 @@
-<h2>{{ (post | async)?.title }}</h2>
-<p [innerHtml]="(post | async)?.content"></p>
+<div ngClass="postDetailWrapper">
+    <h2>{{ (post | async)?.title }}</h2>
+    <h3>{{ (post | async)?.author }}, {{ (post | async)?.date.toLocaleString() }}</h3>
+    <p [innerHtml]="(post | async)?.content"></p>
+</div>

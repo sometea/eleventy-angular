@@ -7,6 +7,10 @@ mat-divider {
     margin-bottom: 5rem;
 }
 
+h1 {
+    cursor: pointer;
+}
+
 .footer {
     background-color: lightgray;
     padding: 1rem;

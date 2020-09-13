@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
 title: The second post
+author: David
 ---
 
 # The second post

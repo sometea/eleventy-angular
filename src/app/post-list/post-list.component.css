@@ -18,4 +18,5 @@ mat-card.first mat-card-content {
     max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
 }
