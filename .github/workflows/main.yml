@@ -37,8 +37,8 @@ jobs:
     - name: install packages
       run: npm install
 
-    - name: Build Site with
-      run: npm run all:ci
+    - name: Build and prerender using 11ty and angular
+      run: npm run prerender:ci
 
     - name: Deploy to Firebase
       uses: w9jds/firebase-action@master
