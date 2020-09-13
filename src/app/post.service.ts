@@ -39,7 +39,11 @@ export class PostService {
     return 'http://localhost:8080/';
   }
 
-  private parsePost(post: any): Post | PostDetail {
+  private parsePost(post: any): Post {
+    return { ...post, date: new Date(post.date) };
+  }
+
+  private parsePostDetail(post: any): PostDetail {
     return { ...post, date: new Date(post.date) };
   }
 
@@ -54,7 +58,7 @@ export class PostService {
   get(postSlug: string) {
     return this.http.get<PostDetail>(`${this.getBaseUrl()}api/posts/${postSlug}.json`)
       .pipe(
-        map(this.parsePost)
+        map(this.parsePostDetail)
       );
   }
 }
