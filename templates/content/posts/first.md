@@ -1,8 +1,9 @@
 ---
 layout: layout.njk
 title: The first post
+date: 2020-09-13T09:49:55.548Z
 author: David
-image: https://source.unsplash.com/random/400x300
+image: https://res.cloudinary.com/dgnntwrsy/image/upload/v1599989540/sample.jpg
 ---
 
 This is something in markdown.
