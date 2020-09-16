@@ -8,7 +8,15 @@ mat-card {
 }
 
 mat-card.portrait {
-    max-width: 28vw;
+    max-width: 90vw;
+    margin-right: 0;
+}
+
+@media (min-width: 1056px) {
+    mat-card.portrait {
+        max-width: 28vw;
+        margin-right: 5rem;
+    }
 }
 
 mat-card.landscape {
