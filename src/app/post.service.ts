@@ -9,6 +9,7 @@ export interface Post {
   fileSlug: string;
   date: Date;
   image: string;
+  teaser: string;
 }
 
 export interface ListResponse {

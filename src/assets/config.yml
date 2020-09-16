@@ -19,6 +19,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widhet: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Teaser", name: "teaser", widget: "string"}
       - {label: "Cover image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}

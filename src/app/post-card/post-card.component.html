@@ -9,7 +9,7 @@
             <img *ngIf="effectiveOrientation === 'portrait'" mat-card-image [src]="post.image"
                 alt="random image">
             <mat-card-content>
-                <p>A teaser text for this blog post</p>
+                <p>{{ post.teaser }}</p>
             </mat-card-content>
         </div>
 </mat-card>
