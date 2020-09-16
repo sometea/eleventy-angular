@@ -14,7 +14,7 @@
     "serve:ssr": "node dist/eleventy-angular/server/main.js",
     "build:ssr": "ng build --prod && ng run eleventy-angular:server:production",
     "prerender": "./angular-prerender.sh",
-    "prerender:ci": "npm run build:ssr && start-server-and-test eleventy-start http://localhost:8080 prerender",
+    "prerender:ci": "npm run eleventy-build && npm run build:ssr && start-server-and-test eleventy-start http://localhost:8080 prerender",
     "deploy": "firebase deploy",
     "all:ci": "npm run prerender:ci && npm run deploy"
   },
