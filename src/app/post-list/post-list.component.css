@@ -15,7 +15,7 @@ mat-card.first mat-card-content {
 }
 
 .smallCardsWrapper {
-    max-width: 87vw;
+    max-width: calc(56vw + 18rem);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;

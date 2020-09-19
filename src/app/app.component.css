@@ -11,7 +11,11 @@ h1 {
     cursor: pointer;
 }
 
+.spacer {
+    flex: 1 1 auto;
+}
+
 .footer {
-    background-color: lightgray;
+    background-color: rgb(238, 238, 238);
     padding: 1rem;
 }
