@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { PageDetailComponent } from './page-detail/page-detail.component';
 import { PageDetailRoutedComponent } from './page-detail-routed/page-detail-routed.component';
+import { AdListComponent } from './ad-list/ad-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PageDetailRoutedComponent } from './page-detail-routed/page-detail-rout
     HomeComponent,
     PostCardComponent,
     PageDetailComponent,
-    PageDetailRoutedComponent
+    PageDetailRoutedComponent,
+    AdListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

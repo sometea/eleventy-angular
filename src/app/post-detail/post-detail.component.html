@@ -1,5 +1,5 @@
-<div ngClass="postDetailWrapper">
-    <h2>{{ (post | async)?.title }}</h2>
-    <h3>{{ (post | async)?.author }}, {{ (post | async)?.date.toLocaleString() }}</h3>
-    <p [innerHtml]="(post | async)?.content"></p>
+<div ngClass="postDetailWrapper" *ngIf="post">
+    <h2>{{ post.title }}</h2>
+    <h3>{{ post.author }}, {{ post.date.toLocaleString() }}</h3>
+    <p [innerHtml]="post.content"></p>
 </div>

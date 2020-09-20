@@ -1,4 +1,4 @@
-<div ngClass="pageDetailWrapper">
+<div ngClass="pageDetailWrapper" *ngIf="page">
     <h2>{{ page.title }}</h2>
     <h3>{{ page.author }}, {{ page.date.toLocaleString() }}</h3>
     <p [innerHtml]="page.content"></p>

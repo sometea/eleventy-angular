@@ -1,0 +1,5 @@
+---
+permalink: "/api/ads/index.json"
+---
+<% const ads = collections.ads.map(ad => ({ title: ad.data.title, url: `/api/pages/${ad.fileSlug}.json`, fileSlug: ad.fileSlug, date: ad.date, content: ad.templateContent })); %>
+<%- JSON.stringify({ads}); -%>

@@ -1,0 +1,8 @@
+---
+pagination:
+    data: collections.ads
+    size: 1
+    alias: ad
+permalink: "/api/ads/<%- ad.fileSlug -%>.json"
+---
+<%- JSON.stringify({title: ad.data.title, url: ad.url, date: ad.date, author: ad.data.author, content: ad.templateContent}) -%>

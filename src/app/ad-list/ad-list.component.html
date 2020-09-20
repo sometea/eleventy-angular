@@ -1,0 +1,9 @@
+<div ngClass="adListWrapper">
+    <h2>Fluffy Bunny Adventures is proudly sponsored by</h2>
+    <div ngClass="adsWrapper">
+        <div *ngFor="let ad of (ads | async)">
+            <h3>{{ ad.title }}</h3>
+            <p [innerHtml]="ad.content"></p>
+        </div>
+    </div>
+</div>
