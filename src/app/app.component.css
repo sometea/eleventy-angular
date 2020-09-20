@@ -1,11 +1,14 @@
-mat-toolbar {
-    padding-left: 5rem;
-    padding-right: 3rem;
+@media (min-width: 1056px) {
+    mat-toolbar {
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }    
 }
 
-mat-divider {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+mat-toolbar {
+    flex-wrap: wrap;
+    z-index: 9;
+    height: auto;
 }
 
 h1 {
@@ -15,6 +18,7 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+    font-size: small;
 }
 
 .spacer {
