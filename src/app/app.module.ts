@@ -13,6 +13,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostDetailRoutedComponent } from './post-detail-routed/post-detail-routed.component';
 import { HomeComponent } from './home/home.component';
 import { PostCardComponent } from './post-card/post-card.component';
+import { PageDetailComponent } from './page-detail/page-detail.component';
+import { PageDetailRoutedComponent } from './page-detail-routed/page-detail-routed.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PostCardComponent } from './post-card/post-card.component';
     PostDetailComponent,
     PostDetailRoutedComponent,
     HomeComponent,
-    PostCardComponent
+    PostCardComponent,
+    PageDetailComponent,
+    PageDetailRoutedComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

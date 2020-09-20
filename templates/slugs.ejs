@@ -1,5 +1,6 @@
 ---
-permalink: "/api/posts/slugs.json"
+permalink: "/api/slugs.json"
 ---
 <% const postSlugs = collections.posts.map(post => post.fileSlug); %>
-<%- JSON.stringify({":postSlug":postSlugs}); -%>
+<% const pageSlugs = collections.pages.map(page => page.fileSlug); %>
+<%- JSON.stringify({":postSlug":postSlugs,":pageSlug":pageSlugs}); -%>

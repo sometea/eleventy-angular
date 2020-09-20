@@ -1,0 +1,12 @@
+.pageDetailWrapper {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    color: lightgray;
+    font-size: small;
+}

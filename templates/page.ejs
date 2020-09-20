@@ -1,0 +1,8 @@
+---
+pagination:
+    data: collections.pages
+    size: 1
+    alias: post
+permalink: "/api/pages/<%- post.fileSlug -%>.json"
+---
+<%- JSON.stringify({title: post.data.title, url: post.url, date: post.date, author: post.data.author, content: post.templateContent}) -%>

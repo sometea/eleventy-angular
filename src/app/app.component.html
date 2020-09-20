@@ -2,6 +2,7 @@
     <img src="/images/bunny.svg" width="50px" height="50px" alt="bunny">
     <h1 routerLink="/">{{ title }}</h1>
     <span ngClass="spacer"></span>
+    <a routerLink="/pages/{{ page.fileSlug }}" *ngFor="let page of (pages | async)">{{ page.title }}</a>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <div ngClass="footer">(C) 2020 David Dasenbrook. contact: info at beamtime dot net.</div>
