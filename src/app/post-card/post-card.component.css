@@ -1,36 +1,37 @@
-mat-card {
-    display: inline-block;
-    margin-right: 5rem;
-    margin-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    cursor: pointer;
+.cardWrapper {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  width: 80vw;
 }
 
-mat-card.portrait {
-    max-width: 90vw;
-    margin-right: 0;
+.cardWrapper img {
+    width: calc(35vw - 3rem);
 }
 
-@media (min-width: 1056px) {
-    mat-card.portrait {
-        max-width: 28vw;
-        margin-right: 5rem;
-    }
-}
+@media (min-width: 480px) {
+  .cardWrapper.landscape {
+    width: 80vw;
+  }
 
-mat-card.landscape {
-    max-width: 70vw;
-    max-height: 60vh;
-    display: flex;
-}
-
-mat-card.landscape img {
-    width: 60%;
+  .cardWrapper.portrait {
+    width: calc(40vw - 5rem);
     margin-right: 2rem;
-    margin-top: 1rem;
+  }
+
+  .cardWrapper.landscape img {
+    width: 75vw;
+  }
+
+  .cardWrapper.portrait img {
+    width: calc(35vw - 3rem);
+  }
 }
 
 .landscapeWrapper {
-    display: block;
+  display: block;
 }

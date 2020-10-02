@@ -1,15 +1,13 @@
-<mat-card routerLink="/posts/{{ post.fileSlug }}" [ngClass]="effectiveOrientation">
-    <img *ngIf="effectiveOrientation === 'landscape'" mat-card-image [src]="post.image"
-        alt="random image">
-        <div ngClass="landscapeWrapper">
-            <mat-card-header>
-                <mat-card-title>{{ post.title }}</mat-card-title>
-                <mat-card-subtitle>{{ post.date.toLocaleDateString() }}</mat-card-subtitle>
-            </mat-card-header>
-            <img *ngIf="effectiveOrientation === 'portrait'" mat-card-image [src]="post.image"
-                alt="random image">
-            <mat-card-content>
-                <p>{{ post.teaser }}</p>
-            </mat-card-content>
-        </div>
-</mat-card>
+<a routerLink="/posts/{{ post.fileSlug }}" class="cardWrapper" [ngClass]="orientation">
+  <div ngClass="landscapeWrapper">
+      <h2>{{ post.title }}</h2>
+      <h3>{{
+        post.date.toLocaleDateString()
+      }}</h3>
+    <img
+      [src]="post.image"
+      alt="random image"
+    />
+      <p>{{ post.teaser }}</p>
+  </div>
+</a>

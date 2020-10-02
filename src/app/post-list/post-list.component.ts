@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { PostService, Post } from '../post.service';
 import { Observable } from 'rxjs';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-
 
 @Component({
   selector: 'app-post-list',

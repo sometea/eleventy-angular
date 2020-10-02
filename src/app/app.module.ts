@@ -2,10 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card';
-import { LayoutModule } from '@angular/cdk/layout';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostListComponent } from './post-list/post-list.component';
@@ -33,9 +29,6 @@ import { AdListComponent } from './ad-list/ad-list.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
-    MatToolbarModule,
-    MatCardModule,
-    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
