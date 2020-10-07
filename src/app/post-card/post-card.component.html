@@ -1,13 +1,14 @@
-<a routerLink="/posts/{{ post.fileSlug }}" class="cardWrapper" [ngClass]="orientation">
-  <div ngClass="landscapeWrapper">
+<a
+  routerLink="/posts/{{ post.fileSlug }}"
+  class="cardWrapper"
+  [ngClass]="orientation"
+>
+  <div ngClass="cardInnerWrapper">
+    <div ngClass="cardMetaData">
       <h2>{{ post.title }}</h2>
-      <h3>{{
-        post.date.toLocaleDateString()
-      }}</h3>
-    <img
-      [src]="post.image"
-      alt="random image"
-    />
-      <p>{{ post.teaser }}</p>
+      <h3>{{ post.date.toLocaleDateString() }}</h3>
+    </div>
+    <img [src]="post.image" alt="random image" />
+    <p ngClass="cardContent">{{ post.teaser }}</p>
   </div>
 </a>
