@@ -15,17 +15,15 @@
 .cardInnerWrapper {
   display: grid;
   grid-template-columns: 70% auto;
-  grid-template-rows: 35% auto;
-}
-
-.cardWrapper .cardInnerWrapper {
-  grid-template-rows: 25% 60% auto;
+  grid-template-rows: 8rem auto 5rem;
+  height: 150%;
 }
 
 .cardWrapper .cardInnerWrapper img {
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
-  max-width: 100%;
+  max-width: 75%;
+  justify-self: center;
 }
 
 .cardWrapper .cardInnerWrapper .cardMetaData {
@@ -50,6 +48,10 @@
     margin-left: 0;
   }
 
+  .cardWrapper.landscape .cardInnerWrapper {
+    grid-template-rows: 33% 33% auto;
+  }
+
   .cardWrapper.landscape .cardInnerWrapper img {
     width: calc(100% - 3rem);
     grid-column: 1 / 1;
@@ -65,8 +67,4 @@
     grid-column: 2 / 2;
     grid-row: 2 / 2;
   }
-}
-
-.landscapeWrapper {
-  display: block;
 }
