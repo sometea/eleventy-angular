@@ -2,33 +2,36 @@
   display: inline-block;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
   padding: 1rem;
   text-decoration: none;
   color: black;
   border: 1px solid black;
-  width: 80vw;
+  width: calc(100% - 6rem);
 }
 
 .cardWrapper img {
-    width: calc(35vw - 3rem);
+    width: calc(100% - 3rem);
 }
 
 @media (min-width: 480px) {
   .cardWrapper.landscape {
-    width: 80vw;
+    width: 93%;
+    margin-left: 0;
   }
 
   .cardWrapper.portrait {
-    width: calc(40vw - 5rem);
+    width: calc(50% - 5rem);
     margin-right: 2rem;
+    margin-left: 0;
   }
 
   .cardWrapper.landscape img {
-    width: 75vw;
+    width: 75%;
   }
 
   .cardWrapper.portrait img {
-    width: calc(35vw - 3rem);
+    width: 90%;
   }
 }
 
