@@ -8,6 +8,7 @@ export interface Post {
   url: string;
   fileSlug: string;
   date: Date;
+  draft: boolean;
   image: string;
   teaser: string;
 }

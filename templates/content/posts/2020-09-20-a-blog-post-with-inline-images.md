@@ -1,6 +1,7 @@
 ---
 title: A blog post with inline images
 date: 2020-09-20T10:17:22.451Z
+draft: true
 author: David
 teaser: This blog post tests if it's also possible to show inline images using
   the current system
