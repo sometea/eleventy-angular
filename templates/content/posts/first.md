@@ -4,11 +4,9 @@ title: Vienna
 date: 2020-09-13T09:49:55.548Z
 draft: true
 author: FB
-teaser: "Welcome to the fluffy bunny adventures blog. Yay! The adventure starts
-  in Vienna, at the height of the Sturm season. Sturm is unfiltered, fermenting
-  grape juice, "
-image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_669/v1602071504/20200802_151256_kxrdln.jpg
+teaser: Welcome to the fluffy bunny adventures blog. Yay!
+image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_548/v1603541345/IMG_20201011_000550_zrj1gy.jpg
 ---
-This is the fluffy bunny adventures blog. On this site, you will be able to follow the fluffy bunny travel adventures through Vienna and Italy over the coming month.
+It is the beginning of October and the height of the Sturm season as the fluffy bunnies arrive in Vienna. We have been advised that this is the best time to visit the Austrian capital. "What is Sturm?", you may ask. It is a sweet and delicious drink of unfiltered, fermenting grape juice on its way to becoming wine. It is best enjoyed on a little hike through the wineyards around Vienna, on a sunny day and with good company. 
 
-![nice picture](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_608/v1602071662/20200811_185010_c1t2bm.jpg)
+![Sturm in a pint](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_510/v1603541345/IMG_20201011_000550_zrj1gy.jpg)
