@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Vienna
 date: 2020-09-13T09:49:55.548Z
-draft: true
+draft: false
 author: FB
 teaser: Welcome to the fluffy bunny adventures blog. Yay!
 image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_548/v1603541345/IMG_20201011_000550_zrj1gy.jpg
