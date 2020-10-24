@@ -11,4 +11,4 @@ It is the beginning of October and the height of the Sturm season as the fluffy 
 
 ![Sturm in a pint](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603541345/IMG_20201011_000550_zrj1gy.jpg)
 
-![Sunny day in the wineyards](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603542060/IMG_20201010_133407_np6cyk.jpg)
+![Sunny day in the wineyards](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_800/v1603542060/IMG_20201010_133407_np6cyk.jpg)
