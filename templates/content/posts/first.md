@@ -1,10 +1,12 @@
 ---
 layout: layout.njk
-title: The first post
+title: Vienna
 date: 2020-09-13T09:49:55.548Z
-draft: false
-author: David
-teaser: Welcome to the fluffy bunny adventures blog. Yay!
+draft: true
+author: FB
+teaser: "Welcome to the fluffy bunny adventures blog. Yay! The adventure starts
+  in Vienna, at the height of the Sturm season. Sturm is unfiltered, fermenting
+  grape juice, "
 image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_669/v1602071504/20200802_151256_kxrdln.jpg
 ---
 This is the fluffy bunny adventures blog. On this site, you will be able to follow the fluffy bunny travel adventures through Vienna and Italy over the coming month.
