@@ -1,13 +1,16 @@
 ---
 layout: layout.njk
-title: The second post
+title: Venice
 date: 2020-09-13T09:50:28.126Z
-author: David
-image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_642/v1599990683/flavio-gasperini-GjKPTkhni6Y-unsplash_kgdiht.jpg
-teaser: A great teaser text that makes you absolutely want to read this blog post.
+draft: false
+author: FB
+teaser: Venice, the city of bridges
+image: https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603543294/IMG_20201012_144239_ef6sxq.jpg
 ---
+We arrived in Venice at a time when the city was relatively empty of people. There was lots of space to hop around and chew on local vegetables.
 
-# The second post
+![](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603543294/IMG_20201012_144239_ef6sxq.jpg)
 
-Later, I will want to add netlify cms to this, but let's first figure out combining this with a cool angular site
-with build-time rendering.
+![](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603543722/20201012_135553_h9bpex.jpg)
+
+![](https://res.cloudinary.com/dgnntwrsy/image/upload/c_scale,w_500/v1603543322/IMG_20201012_175159_dppwo0.jpg)
