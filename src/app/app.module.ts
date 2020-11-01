@@ -1,4 +1,5 @@
-import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -26,8 +27,8 @@ import { AdListComponent } from './ad-list/ad-list.component';
     AdListComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserTransferStateModule,
+    BrowserModule.withServerTransition({ appId: 'eleventy-angular' }),
+    TransferHttpCacheModule,
     HttpClientModule,
     AppRoutingModule,
   ],
