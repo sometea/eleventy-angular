@@ -14,7 +14,7 @@
     "serve:ssr": "node dist/eleventy-angular/server/main.js",
     "build:ssr": "ng build --prod && ng run eleventy-angular:server:production",
     "prerender": "./angular-prerender.sh",
-    "prerender:ci": "npm run eleventy-build && npm run build:ssr && start-server-and-test eleventy-start http://localhost:8080 prerender",
+    "prerender:ci": "npm run eleventy-build && npm run build:ssr && npm run prerender",
     "deploy": "firebase deploy",
     "all:ci": "npm run prerender:ci && npm run deploy"
   },
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@angular-devkit/build-angular": "~0.1000.8",
+    "@angular-devkit/build-angular": "^0.1002.0",
     "@angular/cli": "~10.0.8",
     "@angular/compiler-cli": "~10.0.14",
     "@nguniversal/builders": "^10.0.2",
@@ -55,7 +55,6 @@
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
-    "start-server-and-test": "^1.11.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"

@@ -34,13 +34,12 @@ export class PostService {
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) { }
 
   private getBaseUrl() {
+    // return '/';
     if (isPlatformBrowser(this.platformId)) {
       return '';
     }
     // for build-time prerendering, need absolute urls
-    // this also means that the eleventy server needs to
-    // be running while prerendering
-    return 'http://localhost:8080/';
+    return 'http://localhost:4000/';
   }
 
   private parsePost(post: any): Post {
