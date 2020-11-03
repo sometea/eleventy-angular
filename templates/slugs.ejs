@@ -1,6 +1,6 @@
 ---
-permalink: "/api/slugs.json"
+permalink: "/api/routes.txt"
 ---
 <% const postSlugs = collections.posts.map(post => post.fileSlug); %>
 <% const pageSlugs = collections.pages.map(page => page.fileSlug); %>
-<%- JSON.stringify({":postSlug":postSlugs,":pageSlug":pageSlugs}); -%>
+<%- postSlugs.map(postSlug => `/posts/${postSlug}`).concat(pageSlugs.map(pageSlug => `/pages/${pageSlug}`)).join("\n"); -%>

@@ -13,8 +13,8 @@
     "dev:ssr": "ng run eleventy-angular:serve-ssr",
     "serve:ssr": "node dist/eleventy-angular/server/main.js",
     "build:ssr": "ng build --prod && ng run eleventy-angular:server:production",
-    "prerender": "./angular-prerender.sh",
-    "prerender:ci": "npm run eleventy-build && npm run build:ssr && npm run prerender",
+    "prerender": "ng run eleventy-angular:prerender --routesFile _site/api/routes.txt",
+    "prerender:ci": "npm run eleventy-build && start-server-and-test dev:ssr http://localhost:4200 prerender",
     "deploy": "firebase deploy",
     "all:ci": "npm run prerender:ci && npm run deploy"
   },
@@ -55,6 +55,7 @@
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
+    "start-server-and-test": "^1.11.5",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"

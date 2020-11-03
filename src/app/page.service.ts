@@ -29,16 +29,6 @@ export class PageService {
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) { }
 
-  private getBaseUrl() {
-    if (isPlatformBrowser(this.platformId)) {
-      return '';
-    }
-    // for build-time prerendering, need absolute urls
-    // this also means that the eleventy server needs to
-    // be running while prerendering
-    return 'http://localhost:8080/';
-  }
-
   private parsePage(page: any): Page {
     return { ...page, date: new Date(page.date) };
   }
@@ -48,7 +38,7 @@ export class PageService {
   }
 
   list() {
-    return this.http.get<PageListResponse>(`${this.getBaseUrl()}api/pages/index.json`)
+    return this.http.get<PageListResponse>('api/pages/index.json')
       .pipe(
         map(response => response.pages),
         map(pages => pages.map(this.parsePage))
@@ -56,7 +46,7 @@ export class PageService {
   }
 
   get(pageSlug: string) {
-    return this.http.get<PageDetail>(`${this.getBaseUrl()}api/pages/${pageSlug}.json`)
+    return this.http.get<PageDetail>(`api/pages/${pageSlug}.json`)
       .pipe(
         map(this.parsePageDetail)
       );

@@ -22,22 +22,12 @@ export class AdService {
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) { }
 
-  private getBaseUrl() {
-    if (isPlatformBrowser(this.platformId)) {
-      return '';
-    }
-    // for build-time prerendering, need absolute urls
-    // this also means that the eleventy server needs to
-    // be running while prerendering
-    return 'http://localhost:8080/';
-  }
-
   private parseAd(ad: any): Ad {
     return { ...ad, date: new Date(ad.date) };
   }
 
   list() {
-    return this.http.get<AdListResponse>(`${this.getBaseUrl()}api/ads/index.json`)
+    return this.http.get<AdListResponse>('api/ads/index.json')
       .pipe(
         map(response => response.ads),
         map(ads => ads.map(this.parseAd))
@@ -45,7 +35,7 @@ export class AdService {
   }
 
   get(adSlug: string) {
-    return this.http.get<Ad>(`${this.getBaseUrl()}api/ads/${adSlug}.json`)
+    return this.http.get<Ad>(`api/ads/${adSlug}.json`)
       .pipe(
         map(this.parseAd)
       );

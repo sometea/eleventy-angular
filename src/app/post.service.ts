@@ -33,15 +33,6 @@ export class PostService {
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) { }
 
-  private getBaseUrl() {
-    // return '/';
-    if (isPlatformBrowser(this.platformId)) {
-      return '';
-    }
-    // for build-time prerendering, need absolute urls
-    return 'http://localhost:4000/';
-  }
-
   private parsePost(post: any): Post {
     return { ...post, date: new Date(post.date) };
   }
@@ -51,7 +42,7 @@ export class PostService {
   }
 
   list() {
-    return this.http.get<ListResponse>(`${this.getBaseUrl()}api/posts/index.json`)
+    return this.http.get<ListResponse>('api/posts/index.json')
       .pipe(
         map(response => response.posts),
         map(posts => posts.map(this.parsePost))
@@ -59,7 +50,7 @@ export class PostService {
   }
 
   get(postSlug: string) {
-    return this.http.get<PostDetail>(`${this.getBaseUrl()}api/posts/${postSlug}.json`)
+    return this.http.get<PostDetail>(`api/posts/${postSlug}.json`)
       .pipe(
         map(this.parsePostDetail)
       );
