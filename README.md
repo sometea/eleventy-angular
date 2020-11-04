@@ -1,27 +1,18 @@
 # AngularEleventyBlog
 
+This is an experiment in combining the [11ty static site generator](https://11ty.dev) with a prerendered [angular](https://angular.io)
+application to create some kind of blog. The same result could have been achieved using [Scully](https://scully.io), but scully
+seems to do some additional behind the scenes magic which I wanted to avoid.
+
+For the purpose of this blog, this is somewhat overengineered. The reason things are done in this way is that I wanted to
+experiment in putting together my own angular-based static site generator (using 11ty additionally) to see how things work.
+
+## Components
+
+11ty takes care of assembling the markdown files under templates/content and creating json files out of them. These are subsequently
+consumed by the angular application to render the actual blog. To prerender a static version of the site that can be deployed,
+angular universal and the built-in prerender option is used.
+
+## Note
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
