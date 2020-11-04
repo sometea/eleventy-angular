@@ -8,10 +8,9 @@ import { Observable } from 'rxjs';
 // makes relative urls absolute on the server side.
 class AbsoluteUrlInterceptor implements HttpInterceptor {
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-      const baseHref = '';
-      const urlPrefix = 'http://localhost:4200';
-      const baseUrl = new URL(baseHref, urlPrefix);
-      const url = new URL(req.url, baseUrl);
+      // hardcode this to localhost:4200. the ssr:dev server will be running on this point
+      // and serve the assets during prerendering.
+      const url = new URL(req.url, 'http://localhost:4200');
       return next.handle(req.clone({url: url.toString()}));
     }
 }
